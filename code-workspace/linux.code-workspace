@@ -1,0 +1,65 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../lk_modules"
+		}
+	],
+	"settings": {
+		"files.exclude": {
+			"**/.*": true,
+			"**/*.a": true,
+			"**/*.builtin": true,
+			"**/*.map": true,
+			"**/*.modinfo": true,
+			"**/*.mod.c": true,
+			"**/*.ko": true,
+			"**/*.o": true,
+			"**/*.order": true,
+			"**/*.symvers": true,
+			"**/*vmlinux*": true,
+			"**/*.code-workspace*": true,
+			"**/*compile_commands.json*": true,
+			"**/*cscope*": true,
+			"**/*patch*": true
+		},
+		"C_Cpp.default.compileCommands": "compile_commands.json",
+		"json.maxItemsComputed": 15000,
+		"scope4code.databasePath": "${workspaceRoot}/",
+		"scope4code.engineCommands": {
+			"config_index": {
+				"cscope": {
+					"linux": 0
+				}
+			},
+			"config": [
+				{
+					"find_cmd": "find ${src_path} -type f -name *.c -o -type f -name *.h -o -type f -name *.cpp -o -type f -name *.cc -o -type f -name *.mm",
+					// "database_cmd": "cscope -b -q -k -f ${database_path}/cscope.out",
+					"database_cmd": "make ARCH=x86 cscope",
+					"find_all_ref": "cscope -q -k -f ${database_path}/cscope.out -L0 ${text}",
+					"find_define": "cscope -q -k -f ${database_path}/cscope.out -L1 ${text}",
+					"find_callee": "cscope -q -k -f ${database_path}/cscope.out -L2 ${text}",
+					"find_caller": "cscope -q -k -f ${database_path}/cscope.out -L3 ${text}",
+					"find_text": "cscope -q -k -f ${database_path}/cscope.out -L4 ${text}"
+				}
+			]
+		},
+		"editor.tokenColorCustomizations": {
+			"comments": "#636d83",
+			"functions": "#3fc56b",
+			"keywords": "#10b1fe",
+			"numbers": "#ff78f8",
+			"strings": "#f9c859",
+			"types": "#ff6480",
+			"variables": "#ff936a"
+		},
+		"workbench.colorCustomizations": {
+			"editor.selectionHighlightBackground": "#2E8B57"
+		},
+		"editor.rulers": [80],
+		"editor.tabSize": 8
+	}
+}

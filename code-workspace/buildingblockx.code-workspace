@@ -1,0 +1,33 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.exclude": {
+			"**/.*": true,
+			"**/*.o": true,
+			"**/*.code-workspace*": true,
+			"**/*compile_commands.json*": true,
+		},
+		"editor.tokenColorCustomizations": {
+			"comments": "#636d83",
+			"functions": "#3fc56b",
+			"keywords": "#10b1fe",
+			"numbers": "#ff78f8",
+			"strings": "#f9c859",
+			"types": "#ff6480",
+			"variables": "#ff936a"
+		},
+		"workbench.colorCustomizations": {
+			"editor.selectionHighlightBackground": "#2E8B57"
+		},
+		"editor.rulers": [80],
+		"editor.tabSize": 8,
+		"C_Cpp.default.includePath": [
+			"${workspaceFolder}/include",
+			"${workspaceFolder}/**/include"
+		]
+	}
+}
