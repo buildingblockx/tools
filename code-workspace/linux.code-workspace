@@ -23,6 +23,9 @@
 			"**/*.code-workspace*": true,
 			"**/*compile_commands.json*": true,
 			"**/*cscope*": true,
+			"**/GPATH": true,
+			"**/GRTAGS": true,
+			"**/GTAGS": true,
 			"**/*patch*": true
 		},
 		"C_Cpp.default.compileCommands": "compile_commands.json",
